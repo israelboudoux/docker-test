@@ -1,0 +1,1 @@
+docker run -p 8282:8080 -p 50000:50000 -p 8888:8888 --env JAVA_OPTS=-Dhudson.util.ProcessTree.disable=true israelboudoux/cpim-architect-test

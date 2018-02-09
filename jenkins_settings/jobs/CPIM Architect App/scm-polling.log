@@ -1,0 +1,3 @@
+Started on Oct 24, 2016 10:09:48 PM
+Polling SCM changes on master
+[CPIM Architect App] $ hg pull --rev default

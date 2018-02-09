@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<!-- Your own application should inherit from spring-boot-starter-parent -->
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-starter-parent</artifactId>
+	    <version>1.4.1.RELEASE</version>
+	</parent>
+	
+	<artifactId>application-test</artifactId>
+	<groupId>br.cpim</groupId>
+	
+	<name>Test for System Architect Position</name>
+	<description>Spring Boot Data REST Sample</description>
+	<version>1.4-SNAPSHOT</version>
+	
+	<packaging>war</packaging>
+	
+	<properties>
+		<main.basedir>${basedir}/../..</main.basedir>
+		<java.version>1.8</java.version>
+		<maven.repository>file:///usr/repository/</maven.repository>
+	</properties>
+	
+	<scm>
+		<connection>scm:hg:https://israelboudoux@bitbucket.org/israelboudoux/cpim-test</connection>
+		<developerConnection>scm:hg:https://israelboudoux@bitbucket.org/israelboudoux/cpim-test</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+	
+	<distributionManagement>
+		<repository>
+			<id>repId</id>
+			<url>${maven.repository}</url>
+		</repository>
+	</distributionManagement>
+	
+    <dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		</dependency>
+	    <dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-tomcat</artifactId>
+	        <scope>provided</scope>
+	    </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+		<finalName>application-test</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+			<plugin>
+			  	<groupId>org.eclipse.jetty</groupId>
+			  	<artifactId>jetty-maven-plugin</artifactId>
+			  	<version>9.3.13.v20161014</version>
+			  	<configuration>
+			  		<scanIntervalSeconds>10</scanIntervalSeconds>
+					<stopPort>9966</stopPort>
+					<stopKey>just-stop</stopKey>
+					<stopWait>10</stopWait>
+			    	<webApp>
+			      		<contextPath>/application-test</contextPath>
+			    	</webApp>
+			  	</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.2</version>
+			</plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </repository>
+		
+    </repositories>
+</project>
+

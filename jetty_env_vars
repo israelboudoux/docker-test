@@ -1,0 +1,6 @@
+#nano /etc/default/jetty
+NO_START=0 # Start on boot
+JETTY_HOME=/opt/jetty
+JETTY_PORT=8888
+JETTY_HOST=0.0.0.0
+JETTY_USER=jetty

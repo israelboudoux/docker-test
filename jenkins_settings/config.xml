@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors/>
+  <version>1.0</version>
+  <numExecutors>2</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.GlobalMatrixAuthorizationStrategy">
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:israelboudoux</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:israelboudoux</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:israelboudoux</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:israelboudoux</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:guest</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:israelboudoux</permission>
+    <permission>hudson.model.Computer.Build:guest</permission>
+    <permission>hudson.model.Computer.Build:israelboudoux</permission>
+    <permission>hudson.model.Computer.Configure:israelboudoux</permission>
+    <permission>hudson.model.Computer.Connect:israelboudoux</permission>
+    <permission>hudson.model.Computer.Create:israelboudoux</permission>
+    <permission>hudson.model.Computer.Delete:israelboudoux</permission>
+    <permission>hudson.model.Computer.Disconnect:israelboudoux</permission>
+    <permission>hudson.model.Hudson.Administer:israelboudoux</permission>
+    <permission>hudson.model.Hudson.ConfigureUpdateCenter:israelboudoux</permission>
+    <permission>hudson.model.Hudson.Read:guest</permission>
+    <permission>hudson.model.Hudson.Read:israelboudoux</permission>
+    <permission>hudson.model.Hudson.RunScripts:israelboudoux</permission>
+    <permission>hudson.model.Hudson.UploadPlugins:israelboudoux</permission>
+    <permission>hudson.model.Item.Build:guest</permission>
+    <permission>hudson.model.Item.Build:israelboudoux</permission>
+    <permission>hudson.model.Item.Cancel:guest</permission>
+    <permission>hudson.model.Item.Cancel:israelboudoux</permission>
+    <permission>hudson.model.Item.Configure:israelboudoux</permission>
+    <permission>hudson.model.Item.Create:israelboudoux</permission>
+    <permission>hudson.model.Item.Delete:israelboudoux</permission>
+    <permission>hudson.model.Item.Discover:israelboudoux</permission>
+    <permission>hudson.model.Item.Move:israelboudoux</permission>
+    <permission>hudson.model.Item.Read:anonymous</permission>
+    <permission>hudson.model.Item.Read:guest</permission>
+    <permission>hudson.model.Item.Read:israelboudoux</permission>
+    <permission>hudson.model.Item.Workspace:israelboudoux</permission>
+    <permission>hudson.model.Run.Delete:israelboudoux</permission>
+    <permission>hudson.model.Run.Replay:israelboudoux</permission>
+    <permission>hudson.model.Run.Update:israelboudoux</permission>
+    <permission>hudson.model.View.Configure:guest</permission>
+    <permission>hudson.model.View.Configure:israelboudoux</permission>
+    <permission>hudson.model.View.Create:guest</permission>
+    <permission>hudson.model.View.Create:israelboudoux</permission>
+    <permission>hudson.model.View.Delete:guest</permission>
+    <permission>hudson.model.View.Delete:israelboudoux</permission>
+    <permission>hudson.model.View.Read:guest</permission>
+    <permission>hudson.model.View.Read:israelboudoux</permission>
+    <permission>hudson.plugins.release.ReleaseWrapper.Release:guest</permission>
+    <permission>hudson.plugins.release.ReleaseWrapper.Release:israelboudoux</permission>
+    <permission>hudson.scm.SCM.Tag:guest</permission>
+    <permission>hudson.scm.SCM.Tag:israelboudoux</permission>
+  </authorizationStrategy>
+  <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
+    <disableSignup>true</disableSignup>
+    <enableCaptcha>false</enableCaptcha>
+  </securityRealm>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULLNAME}</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
+  <jdks/>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds/>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>All</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+  </views>
+  <primaryView>All</primaryView>
+  <slaveAgentPort>-1</slaveAgentPort>
+  <label></label>
+  <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
+    <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
+  </crumbIssuer>
+  <nodeProperties/>
+  <globalNodeProperties/>
+</hudson>
