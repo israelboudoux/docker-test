@@ -6,7 +6,7 @@ Initial Step: Execute the load_dok_rep.bat (for Windows) to get the image from r
 Take the IP from Docker Machine: docker-machine ls
 
 Ex.: 
-# docker-machine ls
+$ docker-machine ls
 NAME      ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER    ERRORS
 default   *        virtualbox   Running   tcp://192.168.99.100:2376           v1.12.2
 
