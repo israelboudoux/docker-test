@@ -31,20 +31,20 @@ Parent URL: http://IP_ADDRESS:8888/application-test/calculator
 
 ### GET /sum
 	Params: value1 (double)
-		    value2 (double)
-	e.g.: http://IP_ADDRESS:8888/application-test/calculator/sum?value1=5&value2=0
+		value2 (double)
+	E.g.: http://IP_ADDRESS:8888/application-test/calculator/sum?value1=5&value2=0
 
 ### GET /subtract
 	Params: value1 (double)
-		    value2 (double)
-	e.g.: http://IP_ADDRESS:8888/application-test/calculator/subtract?value1=5&value2=0
+	    value2 (double)
+	E.g.: http://IP_ADDRESS:8888/application-test/calculator/subtract?value1=5&value2=0
 
 ### GET /multiply
 	Params: value1 (double)
 		    value2 (double)
-	e.g.: http://IP_ADDRESS:8888/application-test/calculator/multiply?value1=5&value2=0
+	E.g.: http://IP_ADDRESS:8888/application-test/calculator/multiply?value1=5&value2=0
 
 ### GET /divide
 	Params: value1 (double)
 		    value2 (double)
-	e.g.: http://IP_ADDRESS:8888/application-test/calculator/divide?value1=5&value2=4
+	E.g.: http://IP_ADDRESS:8888/application-test/calculator/divide?value1=5&value2=4
