@@ -1,0 +1,6 @@
+syntax: glob
+.project
+.settings/.jsdtscope
+.classpath
+.settings
+target
